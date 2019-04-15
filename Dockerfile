@@ -6,7 +6,9 @@ COPY . .
 
 COPY .aws/credentials  /root/.aws/credentials
 
-RUN pip install sceptre troposphere
+RUN pip install sceptre
 
-ENTRYPOINT [ "sh" ]
+WORKDIR deploy
+
+CMD [ "sh" ]
 
