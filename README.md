@@ -2,6 +2,8 @@
 
 Run Sceptre inside Docker to avoid Python hassle.
 
+Put AWS credentials in .aws/credentials on project root. It will be copied in Docker image.
+
 build docker image
 `docker build . -t sceptre-kontti`
 
